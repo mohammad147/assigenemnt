@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
             var Hieght: Double = hieghtTxt.text.toString().toDouble();
             var result: Double = calBMI(Hieght, Wieght);
             if (gender == "male") {
-                if (result < 18.5)
+                if (result < 18.50)
                     FResult.text = "Underweight so the BMI IS " + result.toString();
                 else if (result <= 25)
                     FResult.text = "Normal weight so the BMI is" + result.toString();
